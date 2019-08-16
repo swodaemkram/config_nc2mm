@@ -9,7 +9,7 @@ extern string FilterString;
 extern string SentFromWhomString;
 extern string RefreshTimeString;
 extern char LogLocation;
-
+extern bool root;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -17,6 +17,22 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 
     ui->setupUi(this);
+
+ /*
+===============================================================================================================================
+Are We root
+===============================================================================================================================
+ */
+
+   if (root == true)
+   {
+       ui->label_6->hide();
+       goto skipover;
+   }
+
+   ui->SaveButton->hide();
+
+skipover:
 /*
 ===============================================================================================================================
 Load the text boxes with the current data

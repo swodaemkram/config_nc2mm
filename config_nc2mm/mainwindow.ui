@@ -185,6 +185,28 @@
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>200</y>
+      <width>1141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string>NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <property name="enabled">

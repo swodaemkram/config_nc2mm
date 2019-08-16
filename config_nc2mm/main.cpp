@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <iostream>
+#include <unistd.h>
+#include <sys/types.h>
+
 using namespace std;
 
 char LogLocation[1024] = {};
@@ -13,7 +16,7 @@ string WebHookURLString = "";
 string FilterString = "";
 string SentFromWhomString = "";
 string RefreshTimeString = "";
-
+bool root = true;
 
 
 int main(int argc, char *argv[])
@@ -46,6 +49,7 @@ int main(int argc, char *argv[])
                     SentFromWhomString = SentFromWhom;
                     RefreshTimeString = RefreshTime;
 
+                    if(geteuid() !=0) root = false;
 
                     MainWindow w;
                     w.show();
