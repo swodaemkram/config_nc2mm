@@ -40,6 +40,7 @@ public:
     QLabel *label_5;
     QPushButton *CancelButton;
     QPushButton *SaveButton;
+    QLabel *label_6;
     QToolBar *mainToolBar;
     QMenuBar *menuBar;
 
@@ -89,6 +90,12 @@ public:
         SaveButton->setGeometry(QRect(1340, 200, 89, 25));
         SaveButton->setCheckable(false);
         SaveButton->setAutoRepeat(false);
+        label_6 = new QLabel(centralWidget);
+        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setGeometry(QRect(180, 200, 1141, 17));
+        label_6->setAutoFillBackground(true);
+        label_6->setFrameShape(QFrame::StyledPanel);
+        label_6->setFrameShadow(QFrame::Sunken);
         MainWindow->setCentralWidget(centralWidget);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -135,6 +142,7 @@ public:
         SaveButton->setToolTip(QApplication::translate("MainWindow", "Save Changes", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         SaveButton->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
+        label_6->setText(QApplication::translate("MainWindow", "NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT ROOT NOT", Q_NULLPTR));
     } // retranslateUi
 
 };
