@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1466</width>
-    <height>278</height>
+    <height>267</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,6 +22,9 @@
       <width>1211</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Enter NextCloud RSS Feed URL</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -59,6 +62,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Enter The MatterMost In-comming Web Hook Here</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
@@ -81,6 +87,9 @@
       <width>1211</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Filter to apply All or None for no filter</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -105,6 +114,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Enter Sent from Message Here</string>
+    </property>
    </widget>
    <widget class="QPlainTextEdit" name="plainTextEdit_5">
     <property name="geometry">
@@ -114,6 +126,9 @@
       <width>1211</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Enter Refresh Time in Seconds Hre</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -138,6 +153,9 @@
       <height>25</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Cancel OPeration</string>
+    </property>
     <property name="text">
      <string>Cancel</string>
     </property>
@@ -153,6 +171,9 @@
       <width>89</width>
       <height>25</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Save Changes</string>
     </property>
     <property name="text">
      <string>Save</string>
