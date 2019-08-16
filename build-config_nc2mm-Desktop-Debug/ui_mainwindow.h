@@ -47,7 +47,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1466, 278);
+        MainWindow->resize(1466, 267);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         plainTextEdit = new QPlainTextEdit(centralWidget);
@@ -107,12 +107,33 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "config_nc2mm", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        plainTextEdit->setToolTip(QApplication::translate("MainWindow", "Enter NextCloud RSS Feed URL", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         label->setText(QApplication::translate("MainWindow", "NextCloud URL or Rss Feed URL :", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "Mattermost Web Hook URL :", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        plainTextEdit_2->setToolTip(QApplication::translate("MainWindow", "Enter The MatterMost In-comming Web Hook Here", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         label_3->setText(QApplication::translate("MainWindow", "Filter to Apply to Data :", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        plainTextEdit_3->setToolTip(QApplication::translate("MainWindow", "Filter to apply All or None for no filter", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         label_4->setText(QApplication::translate("MainWindow", "Sent From Message :", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        plainTextEdit_4->setToolTip(QApplication::translate("MainWindow", "Enter Sent from Message Here", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_TOOLTIP
+        plainTextEdit_5->setToolTip(QApplication::translate("MainWindow", "Enter Refresh Time in Seconds Hre", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         label_5->setText(QApplication::translate("MainWindow", "Refresh Delay In Seconds : ", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        CancelButton->setToolTip(QApplication::translate("MainWindow", "Cancel OPeration", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         CancelButton->setText(QApplication::translate("MainWindow", "Cancel", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        SaveButton->setToolTip(QApplication::translate("MainWindow", "Save Changes", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         SaveButton->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
     } // retranslateUi
 
